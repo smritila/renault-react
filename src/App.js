@@ -1,17 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Home from './pages/Home';
-import Nav from './components/NavigationBar/Nav';
+
+import Layout from './hoc/Layout';
+
 
 function App() {
-  return (
+  return <Layout>
     <div>
-      <Nav/>
-     <Home/>
+      <h2>Header</h2>
+      <p>This is description</p>
     </div>
-    
-  );
+  </Layout>;
 }
 
 export default App;
