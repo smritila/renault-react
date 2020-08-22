@@ -12,11 +12,11 @@ class Layout extends React.Component {
         return (
             <Fragment>
                 <Navbar />
-                <div>Banner</div>
+                {/* <div>Banner</div>
                 <main>
                     { this.props.children }
                 </main>
-                <div>Footer</div>
+                <div>Footer</div> */}
             </Fragment>
         );
         
