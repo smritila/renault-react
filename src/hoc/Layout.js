@@ -5,21 +5,20 @@ import Footer from '../components/Footer/Footer';
 import Banner from '../components/Banner/Banner';
 
 class Layout extends React.Component {
-    
     render() {
         return (
-            <Fragment>
+            <div className="has_section_bg">
                 <Navbar />
                 <Banner 
                     classes={['banner_style_2']} 
                     backgroundImage="test-drive/test_drive_banner.png"
                     bannerText="Test Drive" 
                 />
-                <main>
+                <main className="pt-70 sec_gray_bg">
                     { this.props.children }
                 </main>
                 <Footer />
-            </Fragment>
+            </div>
         );
     }
 }
