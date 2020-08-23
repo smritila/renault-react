@@ -9,6 +9,6 @@ function navbar() {
             <NavigationItems />
         </nav>
     </header>;
-};
+}
 
 export default navbar;
