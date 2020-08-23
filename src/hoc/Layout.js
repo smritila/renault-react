@@ -2,26 +2,25 @@ import React, { Fragment } from 'react';
 
 import Navbar from '../components/Navigation/Navbar';
 import Footer from '../components/Footer/Footer';
+import Banner from '../components/Banner/Banner';
 
 class Layout extends React.Component {
     
-    // constructor(props) {
-    //     super(props);
-    // }
-
     render() {
         return (
             <Fragment>
                 <Navbar />
-                
-                <div>Banner</div>
+                <Banner 
+                    classes={['banner_style_2']} 
+                    backgroundImage="test-drive/test_drive_banner.png"
+                    bannerText="Test Drive" 
+                />
                 <main>
                     { this.props.children }
                 </main>
                 <Footer />
             </Fragment>
         );
-        
     }
 }
 
