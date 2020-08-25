@@ -14,7 +14,7 @@ class Layout extends React.Component {
                     backgroundImage="test-drive/test_drive_banner.png"
                     bannerText="Test Drive" 
                 />
-                <main className="pt-70 sec_gray_bg">
+                <main>
                     { this.props.children }
                 </main>
                 <Footer />

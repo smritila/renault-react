@@ -28,18 +28,14 @@ function footerItems() {
 
     ];
 
-   
-
     const footerMenuItems = footerItems.map(item => {
         return <ListItem key={ item.id} title={ item.title } />;
     });
 
 
     return <ul>
-            { footerMenuItems }
-        </ul>;
-
-
+        { footerMenuItems }
+    </ul>;
 }
 
 export default footerItems;
