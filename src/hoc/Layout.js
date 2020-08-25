@@ -5,10 +5,9 @@ import Footer from '../components/Footer/Footer';
 import Banner from '../components/Banner/Banner';
 
 class Layout extends React.Component {
-    
     render() {
         return (
-            <Fragment>
+            <div className="has_section_bg">
                 <Navbar />
                 <Banner 
                     classes={['banner_style_2']} 
@@ -19,7 +18,7 @@ class Layout extends React.Component {
                     { this.props.children }
                 </main>
                 <Footer />
-            </Fragment>
+            </div>
         );
     }
 }
