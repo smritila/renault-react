@@ -7,12 +7,12 @@ function PersonalDataProtection (){
 
 
             <div className="nav nav-tabs nav-tabs_reset" id="nav-tab" role="tablist">
-                <a className="nav-item nav-link active" id="lang_eng_tab" data-toggle="tab" href="#eng_lang" role="tab" aria-controls="nav-home" aria-selected="true">
+                {/* <a className="nav-item nav-link active" id="lang_eng_tab" data-toggle="tab" href="#eng_lang" role="tab" aria-controls="nav-home" aria-selected="true">
                     English Version
-                </a>
-                <a className="nav-item nav-link" id="lang_malay_tab" data-toggle="tab" href="#malay_lang" role="tab" aria-controls="nav-profile" aria-selected="false">
+                </a> */}
+                {/* <a className="nav-item nav-link" id="lang_malay_tab" data-toggle="tab" href="#malay_lang" role="tab" aria-controls="nav-profile" aria-selected="false">
                     Malay Version
-                </a>
+                </a> */}
             </div>
     
     
