@@ -46,7 +46,7 @@ class CarModels extends React.Component {
                 image={ model.image }
             />;
         });
-        return <div class="pt-70 sec_gray_bg">
+        return <div className="pt-70 sec_gray_bg">
             <div className="container">
                 <div className="test_drive_container">
                     <h3 className="heading_01 mb-70">Choose car model</h3>
