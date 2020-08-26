@@ -4,7 +4,8 @@ import NavigationItems from './NavigationItems/NavigationItems';
 import SideDrawer from './SideDrawer/SideDrawer';
 
 function navbar() {
-    return <header>
+    return(
+    <header>
         <div className="renault_nav">
             <Logo />
             <nav className="menu_desktop">
@@ -15,7 +16,8 @@ function navbar() {
             </a>
         </div>
         { SideDrawer }
-    </header>;
+    </header>
+    );
 }
 
 export default navbar;

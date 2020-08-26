@@ -41,7 +41,7 @@ function sideDrawerItems() {
     ];
 
     const SideDrawerMenuItems = SideDrawerItems.map(item => {
-        return <ListItem key={ item.id } classes="nav-item">
+        return <ListItem key={ item.id } classes="nav-item ">
             <a 
                 className="nav-link" 
                 href="">
