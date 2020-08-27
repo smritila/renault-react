@@ -8,6 +8,7 @@ function navbar() {
     <header>
         <div className="renault_nav">
             <Logo />
+            
             <nav className="menu_desktop">
                 <NavigationItems />
             </nav>
