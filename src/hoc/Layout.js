@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 
 import Navbar from '../components/Navigation/Navbar';
+import Footer from '../components/Footer/Footer';
 import Banner from '../components/Banner/Banner';
 
 class Layout extends React.Component {
-    
     render() {
         return (
-            <Fragment>
+            <div className="has_section_bg">
                 <Navbar />
                 <Banner 
                     classes={['banner_style_2']} 
@@ -17,8 +17,8 @@ class Layout extends React.Component {
                 <main>
                     { this.props.children }
                 </main>
-                <div>Footer</div>
-            </Fragment>
+                <Footer />
+            </div>
         );
     }
 }
