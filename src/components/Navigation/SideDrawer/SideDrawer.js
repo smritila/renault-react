@@ -1,15 +1,27 @@
 import React from 'react';
 import SideDrawerItems from './SideDrawerItems/SideDrawerItems';
 
-function SideDrawer(){
-    return <div className="side_nav">
-    	<div className="navbar-collapse offcanvas-collapse open">
-    		<a href="javascript:;" className="nav_toggle" data-toggle="offcanvas">
-	            <span></span>
-	        </a>
-            { SideDrawerItems }
+function sideDrawer(props){
+
+    let classes = ['navbar-collapse', 'offcanvas-collapse'];
+    if(props.isOpen) {
+        classes.push('open');
+    }
+    classes = classes.join(' ');
+
+    return (
+        <div className="side_nav">
+            <div className={classes}>
+                <a
+                    href="javascript:void(0);"
+                    className="nav_toggle"
+                    onClick={props.closed}>
+                    <span></span>
+                </a>
+                <SideDrawerItems />
+            </div>
         </div>
-    </div>;
+    );
 }
 
-export default SideDrawer;
+export default sideDrawer;
