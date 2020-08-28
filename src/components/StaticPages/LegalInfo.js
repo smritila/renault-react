@@ -393,8 +393,8 @@ function legalInfo() {
         </div>
 
         </div>
-    )
-};
+    );
+}
   
 
 export default legalInfo;
