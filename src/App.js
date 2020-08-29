@@ -18,7 +18,7 @@ function App() {
         <Route path="/legal" component={LegalInfo} />
         <Route path="/personal-data-protection" component={PersonalDataProtection} />
         <Route path="/car-specification" component={CarSpecification} />
-        <Route path="/" component={CarModels} exact />
+        <Route path="/" component={CarModels} />
     </Switch>
   </Layout>;  
 }
