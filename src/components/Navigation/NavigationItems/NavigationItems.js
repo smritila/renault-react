@@ -31,8 +31,8 @@ function navigationItems() {
         },
         {
             id: 6,
-            title: 'Data protection',
-            to: '/personal-data-protection'
+            title: 'Test Drive',
+            to: '/test-drive'
         }
     ];
 

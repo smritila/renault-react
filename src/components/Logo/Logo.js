@@ -1,11 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function logo() {
-    return <a href className="logo">
+    return <NavLink to="/">
         <img 
             src={process.env.PUBLIC_URL + "/assets/image/logo.png"} 
             alt="Logo" />
-    </a>
+    </NavLink>
 }
 
 export default logo;
