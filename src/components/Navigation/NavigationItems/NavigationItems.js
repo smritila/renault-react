@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import ListItem from '../../UI/ListItem';
+import { NavLink } from 'react-router-dom';
 
 function navigationItems() {
     const carModels = [
@@ -20,15 +21,18 @@ function navigationItems() {
     const features = [
         {
             id: 4,
-            title: 'Test drive'
+            title: 'About',
+            to: '/about'
         },
         {
             id: 5,
-            title: 'Subscription'
+            title: 'Legal Info',
+            to: '/legal'
         },
         {
             id: 6,
-            title: 'Pre-owned'
+            title: 'Data protection',
+            to: '/personal-data-protection'
         }
     ];
 
@@ -37,7 +41,11 @@ function navigationItems() {
     });
 
     const featureMenuItems = features.map(feature => {
-        return <ListItem key={ feature.id} title={ feature.title } />;
+        return <ListItem key={ feature.id} >
+            <NavLink to={ feature.to }>
+                { feature.title }
+            </NavLink>
+        </ListItem>;
     });
 
     return <Fragment>

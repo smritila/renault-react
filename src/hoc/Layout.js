@@ -20,6 +20,13 @@ class Layout extends React.Component {
         });
     }
 
+    componentDidMount() {
+        console.log('[Mounted]', this.props);
+    }
+    componentDidUpdate(prevProps) {
+        console.log('[Updated]', prevProps, this.props);
+    }
+
     render() {
         return (
             <div className="has_section_bg">

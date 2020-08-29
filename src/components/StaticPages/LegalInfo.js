@@ -345,22 +345,24 @@ function legalInfo() {
                 </p>
 
                 <table className="mb-15">
-                    <tr>
-                        <td>Address :</td>
-                        <td>Lot 1A, Jalan Kemajuan, Seksyen 13, 46200 Petaling Jaya, Selangor.</td>
-                    </tr>
-                    <tr>
-                        <td>Tel. No.:</td>
-                        <td>+603 7956 1044</td>
-                    </tr>
-                    <tr>
-                        <td>Email   :</td>
-                        <td>tcec.pdpa@tanchonggroup.com</td>
-                    </tr>
-                    <tr>
-                        <td>Fax No. :</td>
-                        <td>+603 7954 9686</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Address :</td>
+                            <td>Lot 1A, Jalan Kemajuan, Seksyen 13, 46200 Petaling Jaya, Selangor.</td>
+                        </tr>
+                        <tr>
+                            <td>Tel. No.:</td>
+                            <td>+603 7956 1044</td>
+                        </tr>
+                        <tr>
+                            <td>Email   :</td>
+                            <td>tcec.pdpa@tanchonggroup.com</td>
+                        </tr>
+                        <tr>
+                            <td>Fax No. :</td>
+                            <td>+603 7954 9686</td>
+                        </tr>
+                    </tbody>
                 </table>
 
 
@@ -393,8 +395,8 @@ function legalInfo() {
         </div>
 
         </div>
-    )
-};
+    );
+}
   
 
 export default legalInfo;
