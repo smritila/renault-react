@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Switch} from "react-router-dom";
 
-import Layout from './hoc/Layout';
+import Layout from './hoc/Layout/Layout';
 
 import CarModels from './containers/CarModels/CarModels';
 import CarSpecification from './containers/CarSpecification/CarSpecification';
@@ -17,8 +17,8 @@ function App() {
         <Route path="/about" component={AboutRenault} />
         <Route path="/legal" component={LegalInfo} />
         <Route path="/personal-data-protection" component={PersonalDataProtection} />
-        <Route path="/car-specification" component={CarSpecification} />
-        <Route path="/" component={CarModels} />
+        <Route path="/test-drive" component={CarModels} />
+        <Route path="/" component={CarSpecification} />
     </Switch>
   </Layout>;  
 }
