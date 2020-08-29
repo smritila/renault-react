@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 import Navbar from '../components/Navigation/Navbar';
 import Footer from '../components/Footer/Footer';
@@ -21,6 +22,9 @@ class Layout extends React.Component {
     }
 
     render() {
+        const { location } = this.props;
+        console.log(location);
+
         return (
             <div className="has_section_bg">
                 <Navbar drawerToggleClicked={this.sideDrawerToggledHandler} />
@@ -42,4 +46,4 @@ class Layout extends React.Component {
     }
 }
 
-export default Layout;
+export default withRouter(Layout);

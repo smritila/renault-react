@@ -42,7 +42,6 @@ function aboutRenault() {
         <div className="container">
             <div className="interior_box about_banner_box mb-100">
                 <img src={`${process.env.PUBLIC_URL}/assets/image/about/about_banner.png`} alt="" />
-
                 <div className="interior_box_text">
                     <div>
                         <h1>
@@ -50,9 +49,9 @@ function aboutRenault() {
                             <br />
                             <span className="font-weight-light">Innovation, our passion</span>
                         </h1>
-                        <a href="" type="Submit" className="button yellow">
+                        <button type="Submit" className="button yellow">
                             More
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

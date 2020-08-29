@@ -10,18 +10,10 @@ import AboutRenault from './components/StaticPages/AboutRenault'
 function App() {
   return <Layout>
     <Switch>
-        <Route path="/about">
-          <AboutRenault />
-        </Route>
-        <Route path="/legal">
-          <LegalInfo />
-        </Route>
-        <Route path="/personal-data-protection">
-          <PersonalDataProtection />
-        </Route>
-        <Route path="/">
-          <CarModels />
-        </Route>
+        <Route path="/about" component={AboutRenault} />
+        <Route path="/legal" component={LegalInfo} />
+        <Route path="/personal-data-protection" component={PersonalDataProtection} />
+        <Route path="/" component={CarModels} />
     </Switch>
   </Layout>;  
 }
