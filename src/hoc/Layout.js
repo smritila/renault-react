@@ -21,6 +21,13 @@ class Layout extends React.Component {
         });
     }
 
+    componentDidMount() {
+        console.log('[Mounted]', this.props);
+    }
+    componentDidUpdate(prevProps) {
+        console.log('[Updated]', prevProps, this.props);
+    }
+
     render() {
         const { location } = this.props;
         console.log(location);
