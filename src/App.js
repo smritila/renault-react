@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch} from "react-router-dom";
+import {Route, Switch, Redirect} from "react-router-dom";
 
 import Layout from './hoc/Layout/Layout';
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/legal" component={LegalInfo} />
         <Route path="/personal-data-protection" component={PersonalDataProtection} />
         <Route path="/test-drive" component={CarModels} />
-        <Route path="/" component={CarSpecification} />
+        <Route path="/" component={CarModels} />
     </Switch>
   </Layout>;  
 }

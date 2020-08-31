@@ -16,13 +16,7 @@ function banner(props) {
 
     return <div className={ classes } style={ styleObj }>
         <div className="banner_into">
-            <div className="banner_bottom with_button align-items-end">
-                <div>
-                    <h1>
-                        { props.bannerText }
-                    </h1>
-                </div>
-            </div>
+            { props.children }
         </div>
     </div>
 }
