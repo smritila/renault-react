@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 
 import Navbar from '../../components/Navigation/Navbar';
@@ -10,17 +10,38 @@ const bannerMapWithRoute = {
     'test-drive': {
         classes: ['banner_style_2'],
         backgroundImage: 'test-drive/test_drive_banner.png',
-        bannerText: 'Test Drive'
+        childEl: () => {
+            return <div className="banner_bottom with_button align-items-end">
+                <div>
+                    <h1>
+                        Test Drive
+                    </h1>
+                </div>
+            </div>;
+        }
     },
     'legal': {
         classes: [],
         backgroundImage: 'page_banner/Banner_Legal.jpg',
-        bannerText: 'Legal Info'
+        childEl: () => {
+            return <h1>
+                Legal Info
+            </h1>;
+        }
     },
     'about': {
         classes: [],
         backgroundImage: 'captur/Exterior_banner.png',
-        bannerText: 'Captur'
+        childEl: () => {
+            return <Fragment>
+                <h1 className="mb-15">
+                    Captur
+                </h1>
+                <p className="text-white">
+                    Europe’s best-selling crossover in its segment
+                </p>
+            </Fragment>;
+        }
     }
 };
 
@@ -41,16 +62,16 @@ class Layout extends React.Component {
     }
 
     componentDidUpdate(prevProps) {
-        console.log('[componentDidUpdate]');
         if(prevProps.location.pathname !== this.props.location.pathname) {
             let pathname = this.props.location.pathname;
             pathname = pathname.replace('/', '');
+            pathname = pathname === '' ? 'test-drive' : pathname;
             this.setState({ pathname: pathname  })
         }
     }
 
     render() {
-        const bannerObject = bannerMapWithRoute[this.state.pathname];
+        const { childEl,  ...bannerObject } = bannerMapWithRoute[this.state.pathname];
 
         return (
             <div className="has_section_bg">
@@ -59,7 +80,9 @@ class Layout extends React.Component {
                     closed={this.sideDrawerToggledHandler} 
                     isOpen={this.state.showSideDrawer}
                 />
-                <Banner { ...bannerObject }></Banner>
+                <Banner { ...bannerObject }>
+                    { childEl() }
+                </Banner>
                 <main>
                     { this.props.children }
                 </main>
