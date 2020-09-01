@@ -391,10 +391,13 @@ function legalInfo() {
             <p>
                 By using our Site, you consent to the use and storage of cookies on your device. However, you can also view our Site without cookies. Your browser lets you choose whether to accept, not to accept or to be warned before accepting cookies. Such guidance is provided in your chosen browser’s manual. Please note however that the blocking of some types of cookies may impact your experience of the Site.
 
-        </p>
+            </p>
+        
         </div>
 
+        
         </div>
+        
     );
 }
   
