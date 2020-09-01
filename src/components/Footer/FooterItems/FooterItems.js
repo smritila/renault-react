@@ -28,13 +28,36 @@ function footerItems() {
 
     ];
 
+    const socialLinks = [
+        {
+            id: 'facebook',
+            icon: 'fa fa-facebook'
+        },
+        {
+            id: 'instagram',
+            icon: 'fa fa-instagram'
+        },
+        {
+            id: 'youtube',
+            icon: 'fa fa-youtube'
+        }
+    ];
+
     const footerMenuItems = footerItems.map(item => {
         return <ListItem key={ item.id} title={ item.title } />;
     });
 
+    const socialMenuItems = socialLinks.map(link => {
+        return <ListItem key={ link.id } classes="social_list">
+            <a href="" className="social">
+                <i className={ link.icon }></i>
+            </a>
+        </ListItem>;
+    })
 
     return <ul>
         { footerMenuItems }
+        { socialMenuItems }  
     </ul>;
 }
 
