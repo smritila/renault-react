@@ -6,7 +6,9 @@ class Captur extends React.Component {
     render() {
         return <div className="hero">
             <div className="wrapper">
-                <FullPageSlider />
+                <FullPageSlider>
+                    
+                </FullPageSlider>
             </div>
         </div>;
     }

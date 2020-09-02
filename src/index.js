@@ -5,9 +5,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const REACT_APP_BASE = '/v2/renault-react';
+
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={REACT_APP_BASE}>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
