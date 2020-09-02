@@ -4,7 +4,8 @@ import {Route, Switch, Redirect} from "react-router-dom";
 import Layout from './hoc/Layout/Layout';
 
 import CarModels from './containers/CarModels/CarModels';
-import CarSpecification from './containers/CarSpecification/CarSpecification';
+import Captur from './containers/CarModels/Details/Captur';
+//import CarSpecification from './containers/CarSpecification/CarSpecification';
 
 import LegalInfo from './components/StaticPages/LegalInfo';
 import PersonalDataProtection from './components/StaticPages/PersonalDataProtection' ;
@@ -18,7 +19,7 @@ function App() {
         <Route path="/legal" component={LegalInfo} />
         <Route path="/personal-data-protection" component={PersonalDataProtection} />
         <Route path="/test-drive" component={CarModels} />
-        <Route path="/" component={CarModels} />
+        <Route path="/" component={Captur} />
     </Switch>
   </Layout>;  
 }

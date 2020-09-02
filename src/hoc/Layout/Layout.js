@@ -51,7 +51,7 @@ class Layout extends React.Component {
         super(props);
         this.state = {
             showSideDrawer: false,
-            pathname: 'test-drive'
+            pathname: ''
         };
     }
 
@@ -65,13 +65,20 @@ class Layout extends React.Component {
         if(prevProps.location.pathname !== this.props.location.pathname) {
             let pathname = this.props.location.pathname;
             pathname = pathname.replace('/', '');
-            pathname = pathname === '' ? 'test-drive' : pathname;
-            this.setState({ pathname: pathname  })
+            this.setState({ pathname: pathname });
         }
     }
 
     render() {
-        const { childEl,  ...bannerObject } = bannerMapWithRoute[this.state.pathname];
+        let bannerEl = null;
+        let footerEl = null;
+        if(bannerMapWithRoute[this.state.pathname]){
+            const { childEl,  ...bannerObject } = bannerMapWithRoute[this.state.pathname];
+            bannerEl = (<Banner { ...bannerObject }>
+                { childEl() }
+            </Banner>);
+            footerEl = <Footer />;
+        }
 
         return (
             <div className="has_section_bg">
@@ -80,13 +87,11 @@ class Layout extends React.Component {
                     closed={this.sideDrawerToggledHandler} 
                     isOpen={this.state.showSideDrawer}
                 />
-                <Banner { ...bannerObject }>
-                    { childEl() }
-                </Banner>
+                { bannerEl }
                 <main>
                     { this.props.children }
                 </main>
-                <Footer />
+               { footerEl }
             </div>
         );
     }
