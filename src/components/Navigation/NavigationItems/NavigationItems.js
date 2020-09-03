@@ -6,15 +6,18 @@ function navigationItems() {
     const carModels = [
         {
             id: 1,
-            title: 'Captur'
+            title: 'Captur',
+            to: '/captur'
         },
         {
             id: 2,
-            title: 'Koleos'
+            title: 'Koleos',
+            to: '/koles'
         },
         {
             id: 3,
-            title: 'Megane R.S'
+            title: 'Megane R.S',
+            to: '/megane'
         }
     ];
 
@@ -37,7 +40,11 @@ function navigationItems() {
     ];
 
     const carModelMenuItems = carModels.map(model => {
-        return <ListItem key={ model.id} title={ model.title } />;
+        return <ListItem key={ model.id} title={ model.title }>
+            <NavLink to={ model.to }>
+                { model.title }
+            </NavLink>
+        </ListItem>;
     });
 
     const featureMenuItems = features.map(feature => {
