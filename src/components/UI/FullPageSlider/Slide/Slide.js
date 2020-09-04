@@ -3,6 +3,12 @@ import React from 'react';
 //import PropTypes from 'prop-Types';
 
 function slide (props)  {
+
+    let detailsElement = null;
+    if(props.details) {
+        detailsElement = props.details.element();
+    }
+
     return <div className="hero_slide_single section p-0" data-anchor={props.anchor}>
         <div style={{position: 'relative'}} className="reset_slide_in_scroll">
             <img 
@@ -14,11 +20,11 @@ function slide (props)  {
                 <h1 className="text-white">
                     {props.header}
                 </h1>
-
                 <p className="mb-30 text-white">
                     {props.description}
                 </p>
             </div>
+            { detailsElement }
         </div> 
     </div>;
 }
