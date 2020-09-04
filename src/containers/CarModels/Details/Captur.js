@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React  from 'react';
 import Slide from '../../../components/UI/FullPageSlider/Slide/Slide';
 import FullPageSlider from '../../../components/UI/FullPageSlider/FullPageSlider';
 
