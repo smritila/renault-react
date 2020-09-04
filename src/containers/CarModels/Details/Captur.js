@@ -135,7 +135,7 @@ class Captur extends React.Component {
                                         More
                                     </a>
                                 </div>
-                            </div>
+                            </div>;
                         }
                     }
                 },
@@ -148,53 +148,129 @@ class Captur extends React.Component {
                     details: {
                         element: () => {
                             return <div className="hero_slide_single_dtls_bottom">
-                                <div className="hero_slide_single_dtls_bottom_flex_2">
-                                    <div className="dtls_list">
-                                        <h2>
-                                            Technology Derived from Formula 1 
-                                        </h2>
+                            <div className="hero_slide_single_dtls_bottom_flex_2">
+                                <div className="dtls_list">
+                                    <h2>
+                                        Technology Derived from Formula 1 
+                                    </h2>
 
-                                        <p>
-                                            The Captur benefits from  Renault’s experience in F1,<br />
-                                            delivering performance, fuel consumption <br />
-                                            and quality. <br />
-                                        </p>
-                                    </div>
-                                    <div className="dtls_list">
-                                        <h2>
-                                            Turbocharged Engine
-                                        </h2>
+                                    <p>
+                                        The Captur benefits from  Renault’s experience in F1,<br/>
+                                        delivering performance, fuel consumption <br/>
+                                        and quality. <br/>
+                                    </p>
+                                </div>
 
-                                        <p>
-                                            Power and excellent fuel efficiency, the turbocharged <br />
-                                            TCe 120 engine mated to a 6-speed Efficient Dual <br />
-                                            Clutch (EDC) transmission.<br />
-                                        </p>
-                                    </div>
+                                <div className="dtls_list">
+                                    <h2>
+                                        Turbocharged Engine
+                                    </h2>
+
+                                    <p>
+                                        Power and excellent fuel efficiency, the turbocharged <br/>
+                                        TCe 120 engine mated to a 6-speed Efficient Dual <br/>
+                                        Clutch (EDC) transmission.<br/>
+                                    </p>
                                 </div>
-                                <div className="text-center center_btn">
-                                    <a href="javascript:;" className="button btn_white_border btn_rounded btn_more learn_more_btn" data-target="#Technology_more">
-                                        More
-                                    </a>
-                                </div>
-                            </div>;
+                            </div>
+
+                            <div className="text-center center_btn">
+                                <a href="javascript:;" className="button btn_white_border btn_rounded btn_more learn_more_btn" data-target="#Technology_more">
+                                    More
+                                </a>
+                            </div>
+                        </div>;
                         }
                     }
                 },
+
                 {
                     anchor: 'Safety',
                     tooltip: 'Safety',
                     image: 'captur/captur_5.jpg',
                     header: 'Captur',
-                    description: 'Europe’s best-selling crossover in its segment'
+                    description: 'Europe’s best-selling crossover in its segment',
+                    details: {
+                       element: () => {
+                        return <div className="hero_slide_single_dtls_bottom">
+                                <div className="hero_slide_single_dtls_bottom_flex_2">
+                                    <div className="dtls_list">
+                                        <h2>
+                                            <span className="star_rat">
+                                                <i className="fa fa-star"></i>
+                                                <i className="fa fa-star"></i>
+                                                <i className="fa fa-star"></i>
+                                                <i className="fa fa-star"></i>
+                                                <i className="fa fa-star"></i>
+                                            </span>
+                                            Safety Rating 
+                                        </h2>
+
+                                        <p>
+                                            Captur scored five stars in the  passive safety<br />
+                                            crash tests carried out by the independent<br />
+                                            body Euro NCAP.<br />
+                                        </p>
+                                    </div>
+
+                                    <div className="dtls_list news_style">
+                                        <div>
+                                             {/* <p className="mb-0 float-left">4</p>
+                                            <h2>
+                                                High Efficiency Airbags
+                                            </h2> */}
+
+                                            <h2>
+                                                <span>4</span>
+                                                High Efficiency Airbags
+                                                <p>
+                                                    In the event of Impact, the Captur is front <br />
+                                                    airbags, head/thorax side airbags and efficient<br />
+                                                    pressure sensors to detect impact.<br /> 
+                                                </p>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="text-center center_btn">
+                                    <a href="javascript:;" className="button btn_white_border btn_rounded btn_more learn_more_btn" data-target="#Safety_more">
+                                        More
+                                    </a>
+                                </div>
+                            </div>;
+                        }
+                    }       
                 },
+
                 {
                     anchor: 'PriceAndSpecifications',
                     tooltip: 'PriceAndSpecifications',
                     image: 'captur/captur_6.jpg',
                     header: 'Captur',
-                    description: 'Europe’s best-selling crossover in its segment'
+                    description: 'Europe’s best-selling crossover in its segment',
+                    details: {
+                        element: () =>{
+                            return <div className="hero_slide_single_dtls_bottom">
+                            <div className="dtls_list price_spec_dtls">
+                                <h2 className="text-center">
+                                    Price & Specifications
+                                </h2>
+                            </div>
+
+
+                            <div className="text-center center_btn">
+                                <a href="javascript:;" className="button btn_white_border btn_rounded btn_more learn_more_btn" data-target="#price_spec">
+                                    More
+                                </a>
+                            </div>
+                        </div>;
+
+                        }
+
+                    }
                 },
+
                 {
                     anchor: 'Review',
                     tooltip: 'Review',
