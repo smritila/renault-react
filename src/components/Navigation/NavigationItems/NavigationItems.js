@@ -12,7 +12,7 @@ function navigationItems() {
         {
             id: 2,
             title: 'Koleos',
-            to: '/koles'
+            to: '/koleos'
         },
         {
             id: 3,

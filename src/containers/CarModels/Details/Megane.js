@@ -2,7 +2,7 @@ import React from 'react';
 import Slide from '../../../components/UI/FullPageSlider/Slide/Slide';
 import FullPageSlider from '../../../components/UI/FullPageSlider/FullPageSlider';
 
-class Captur extends React.Component {
+class Megane extends React.Component {
 
     constructor(props) {
         super(props);
@@ -11,53 +11,57 @@ class Captur extends React.Component {
                 {
                     anchor: 'Overview',
                     tooltip: 'Overview',
-                    image: 'captur/captur_1.jpg',
-                    header: 'Captur',
-                    description: 'Europe’s best-selling crossover in its segment'
+                    image: 'megane/megane_1.png',
+                    header: ' Megane R.S.',
+                    description: 'Conquer Every Corner'
                 },
                 {
                     anchor: 'Exterior',
                     tooltip: 'Exterior',
-                    image: 'captur/captur_2.jpg',
-                    header: 'Captur',
-                    description: 'Europe’s best-selling crossover in its segment'
+                    image:  'megane/megane_2.png',
+                    header: 'Koleos',
+                    description: 'Conquer Every Corner'
                 },
                 {
                     anchor: 'Interior',
                     tooltip: 'Interior',
-                    image: 'captur/captur_3.jpg',
-                    header: 'A Smart Interior',
-                    description: 'Europe’s best-selling crossover in its segment'
+                    image: 'megane/megane_3.png',
+                    header: 'Megane R.S.' ,
+                    description: 'Conquer Every Corner'
+                    
                 },
 
                 {
                     anchor: 'Technology',
                     tooltip: 'Technology',
-                    image: 'captur/captur_4.jpg',
-                    header: 'Captur',
-                    description: 'Europe’s best-selling crossover in its segment'
+                    image: 'megane/megane_4.png',
+                    header: 'Technology',
+                    description: 'Conquer Every Corner'
+                    
                 },
 
                 {
                     anchor: 'Safety',
                     tooltip: 'Safety',
-                    image: 'captur/captur_5.jpg',
-                    header: 'Captur',
-                    description: 'Europe’s best-selling crossover in its segment'
-                },
+                    image: 'megane/megane_5.png',
+                    header: 'Safety',
+                    description: 'Conquer Every Corner'
+                    
+
+                },    
 
                 {
                     anchor: 'PriceAndSpecifications',
                     tooltip: 'PriceAndSpecifications',
-                    image: 'captur/captur_6.jpg',
-                    header: 'Captur',
-                    description: 'Europe’s best-selling crossover in its segment'
+                    image: 'megane/megane_3.png',
+                    header: 'Megane R.S.',
+                    description: 'Conquer Every Corner'
                 },
 
                 {
                     anchor: 'Review',
                     tooltip: 'Review',
-                    image: 'hero_2.jpg',
+                    image: 'megane/megane_4.png',
                     header: 'Test drive on your terms',
                     description: ' Enjoy 3-hour pressure test drive'
                 },
@@ -91,4 +95,4 @@ class Captur extends React.Component {
     }
 }
 
-export default Captur;
+export default Megane;
