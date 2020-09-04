@@ -5,6 +5,9 @@ import Layout from './hoc/Layout/Layout';
 
 import CarModels from './containers/CarModels/CarModels';
 import Captur from './containers/CarModels/Details/Captur';
+import Koleos from './containers/CarModels/Details/Koleos';
+import Megane from './containers/CarModels/Details/Megane';
+
 //import CarSpecification from './containers/CarSpecification/CarSpecification';
 
 import LegalInfo from './components/StaticPages/LegalInfo';
@@ -20,6 +23,9 @@ function App() {
         <Route path="/personal-data-protection" component={PersonalDataProtection} />
         <Route path="/test-drive" component={CarModels} />
         <Route path="/captur" component={Captur} />
+        <Route path="/koleos" component={Koleos} />
+        <Route path="/megane" component={Megane} />
+
         <Route path="/" component={Captur} />
     </Switch>
   </Layout>;  

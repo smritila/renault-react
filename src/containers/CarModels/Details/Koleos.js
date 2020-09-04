@@ -2,7 +2,7 @@ import React from 'react';
 import Slide from '../../../components/UI/FullPageSlider/Slide/Slide';
 import FullPageSlider from '../../../components/UI/FullPageSlider/FullPageSlider';
 
-class Captur extends React.Component {
+class Koleos extends React.Component {
 
     constructor(props) {
         super(props);
@@ -11,40 +11,41 @@ class Captur extends React.Component {
                 {
                     anchor: 'Overview',
                     tooltip: 'Overview',
-                    image: 'captur/captur_1.jpg',
-                    header: 'Captur',
-                    description: 'Europe’s best-selling crossover in its segment'
+                    image: 'koleos/koleos_1.png',
+                    header: ' Koleos',
+                    description: 'Elevate your luxury'
                 },
                 {
                     anchor: 'Exterior',
                     tooltip: 'Exterior',
-                    image: 'captur/captur_2.jpg',
-                    header: 'Captur',
-                    description: 'Europe’s best-selling crossover in its segment'
+                    image: 'koleos/koleos_2.png',
+                    header: 'Koleos',
+                    description: ' Elevate your luxury'
                 },
                 {
                     anchor: 'Interior',
                     tooltip: 'Interior',
-                    image: 'captur/captur_3.jpg',
-                    header: 'A Smart Interior',
-                    description: 'Europe’s best-selling crossover in its segment'
+                    image: 'koleos/koleos_3.png',
+                    header: 'Koleos',
+                    description: 'Elevate your luxury'
                 },
 
                 {
                     anchor: 'Technology',
                     tooltip: 'Technology',
-                    image: 'captur/captur_4.jpg',
-                    header: 'Captur',
-                    description: 'Europe’s best-selling crossover in its segment'
+                    image: 'koleos/koleos_4.png',
+                    header: 'Koleos',
+                    description: 'Elevate your luxury'
                 },
 
                 {
                     anchor: 'Safety',
                     tooltip: 'Safety',
-                    image: 'captur/captur_5.jpg',
-                    header: 'Captur',
-                    description: 'Europe’s best-selling crossover in its segment'
-                },
+                    image: 'koleos/koleos_5.png',
+                    header: 'Koleos',
+                    description: 'Elevate your luxury'
+
+                },    
 
                 {
                     anchor: 'PriceAndSpecifications',
@@ -91,4 +92,4 @@ class Captur extends React.Component {
     }
 }
 
-export default Captur;
+export default Koleos;
