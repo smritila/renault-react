@@ -272,7 +272,6 @@ class Megane extends React.Component {
                         }
                     }
                 }
-                
             ]
         }
     }

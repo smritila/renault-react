@@ -844,10 +844,10 @@ a.nav_toggle:after{
     transition: all ease-in-out .3s;
 
 }
-.menu_desktop ul li a:hover, .menu_desktop ul li.active a {
+.menu_desktop ul li a:hover, .menu_desktop ul li a.active {
     color: #fed42c;
 }
-.menu_desktop ul li:not(.profile) a:after, .menu_desktop ul li.active a:after {
+.menu_desktop ul li:not(.profile) a:after, .menu_desktop ul li a.active:after {
     content: "";
     height: 2px;
     width: 0;
@@ -858,7 +858,7 @@ a.nav_toggle:after{
     opacity: 0;
     transition: all ease-in-out .3s;
 }
-.menu_desktop ul li a:hover:after, .menu_desktop ul li.active a:after{
+.menu_desktop ul li a:hover:after, .menu_desktop ul li a.active:after{
     width: calc(100% - 30px);
     opacity: 1;
 }
