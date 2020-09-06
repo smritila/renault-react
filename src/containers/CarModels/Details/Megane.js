@@ -65,7 +65,6 @@ class Megane extends React.Component {
 
                     }
                 },
-
                 {
                     anchor: 'Exterior',
                     tooltip: 'Exterior',
@@ -149,7 +148,6 @@ class Megane extends React.Component {
                     }
                     
                 },
-
                 {
                     anchor: 'Technology',
                     tooltip: 'Technology',
@@ -193,7 +191,6 @@ class Megane extends React.Component {
                     }
                     
                 },
-
                 {
                     anchor: 'Safety',
                     tooltip: 'Safety',
@@ -236,7 +233,6 @@ class Megane extends React.Component {
                     } 
 
                 },    
-
                 {
                     anchor: 'PriceAndSpecifications',
                     tooltip: 'PriceAndSpecifications',
@@ -262,16 +258,20 @@ class Megane extends React.Component {
                         }
                     }
                 },
-
                 {
                     anchor: 'Review',
                     tooltip: 'Review',
                     image: 'megane/megane_4.png',
                     header: 'Test drive on your terms',
                     description: ' Enjoy 3-hour pressure test drive',
-                     
+                    details: {
+                        element: () => {
+                            return <a href="" className="button btn_white_border btn_rounded">
+                                Discover more
+                            </a>
+                        }
+                    }
                 }
-                
             ]
         }
     }

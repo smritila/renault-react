@@ -1,6 +1,6 @@
 import React from 'react';
 
-//import PropTypes from 'prop-Types';
+import PropTypes from 'prop-types';
 
 function slide (props)  {
 
@@ -23,17 +23,17 @@ function slide (props)  {
                 <p className="mb-30 text-white">
                     {props.description}
                 </p>
+                { detailsElement }
             </div>
-            { detailsElement }
         </div> 
     </div>;
 }
 
-// slide.propTypes = {
-//     anchor: PropTypes.string,
-//     image:PropTypes.string,
-//     header: PropTypes.string,
-//     description:PropTypes.string
-// }
+slide.propTypes = {
+    anchor: PropTypes.string,
+    image: PropTypes.string,
+    header: PropTypes.string,
+    description: PropTypes.string
+};
 
 export default slide;

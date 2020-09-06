@@ -41,7 +41,7 @@ function navigationItems() {
 
     const carModelMenuItems = carModels.map(model => {
         return <ListItem key={ model.id} title={ model.title }>
-            <NavLink to={ model.to }>
+            <NavLink to={ model.to } activeClassName="active">
                 { model.title }
             </NavLink>
         </ListItem>;
@@ -49,7 +49,7 @@ function navigationItems() {
 
     const featureMenuItems = features.map(feature => {
         return <ListItem key={ feature.id} >
-            <NavLink to={ feature.to }>
+            <NavLink to={ feature.to } activeClassName="active">
                 { feature.title }
             </NavLink>
         </ListItem>;
