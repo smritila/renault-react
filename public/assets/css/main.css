@@ -4,7 +4,7 @@
 @font-face {
     font-family: 'Renault Life';
     src: url('../fonts/RenaultLife/RenaultLife-Italic.eot');
-    src: local(../fonts/RenaultLife/'RenaultLife-Italic'),
+    src: local('../fonts/RenaultLife/RenaultLife-Italic'),
         url('../fonts/RenaultLife/RenaultLife-Italic.eot?#iefix') format('embedded-opentype'),
         url('../fonts/RenaultLife/RenaultLife-Italic.woff') format('woff'),
         url('../fonts/RenaultLife/RenaultLife-Italic.ttf') format('truetype');
@@ -580,9 +580,9 @@ ul.pegination_list {
 .custom-control-label::after {
     top: 0.8vh;
 }
-.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+/* .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
     background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E);
-}
+} */
 
 
 .custom-control.custom-checkbox.mr-sm-2 {
